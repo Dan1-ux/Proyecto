@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Jesadi</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+ <div class="tab_box">
+	<button class="tab_btn">Crear</button>
+    <button class="tab_btn">Documentos</button>
+	<button class="tab_btn">Parametros</button>
+	<div class="line"></div>
+</div>
+
+<div class="content_box">
+	<div class="content">
+		 <div class="contenido_fields">
+                                <label>Clave Plantel</label>
+                                <input type="text" placeholder="Escribe la clave" required>
+                           </div>
+
+                          <div class="input-fields">
+	                          <label>Tipo de plantel</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+	</div>
+
+	<div class="content">
+		<div class="input-fields">
+	                          <label>Documentos</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+
+                           <div class="input-fields">
+								<label>Fecha de vigencia</label>
+								<input type="date" placeholder="Fecha de vigencia" required>
+							</div>
+	</div>
+
+	<div class="content">
+		<div class="input-fields">
+								<label>Consecutivo empleado</label>
+								<input type="text" placeholder="Escribe el consecutivo" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Consecutivo alumno</label>
+								<input type="text" placeholder="Escribe el consecutivo" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Consecutivo ticket</label>
+								<input type="text" placeholder="Escribe el consecutivo" required>
+							</div>
+	</div>
+
+
+	</div>
+</div>
+
+
+<script>
+	const tabs= document.querySelectorAll('.tab_btn');
+	const all_content= document.querySelectorAll('.content');
+
+	tabs.forEach((tab, index)=>{
+		tab.addEventListener('click',(e)=>{
+			tabs.forEach(tab=>{tab.classList.remove('active')});
+			tab.classList.add('active');
+
+			var line= document.querySelector('.line');
+		line.style.width = e.target.offsetWidth + "px";
+		line.style.left = e.target.offsetLeft + "px";
+
+		all_content.forEach(content=>{content.classList.remove('active')});
+		all_content[index].classList.add('active');
+
+		})
+	})
+
+</script>
+
+</body>
+</html>
+
+

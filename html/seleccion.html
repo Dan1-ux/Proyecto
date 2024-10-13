@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="css/virtual-select.min.css">
+<link rel="stylesheet" type="text/css" href="css/forms.css">
+</head>
+<body>
+
+<div class="container">
+	<header>Plantel</header>
+
+	<form>
+<div class="etiqueta1">
+	<span class="titulo">Crear</span>
+<div class="fields">
+<div class="input-fields">
+	
+    <label>Dato1</label>
+    <input type="text" placeholder="Coloca un dato" required>
+</div>
+
+                            <div class="input-fields">
+	                          <label>Multiple Select</label>
+	                          <select id="multi_option" multiple name="native-select" placeholder="Native Select" data-silent-initial-value-set="false">
+	                              <option value="1">HTML</option>
+	                               <option value="2">CSS</option>
+	                               <option value="3">JavaScript</option>
+	                               <option value="4">Python</option>
+	                               <option value="5">JAVA</option>
+	                               <option value="6">PHP</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+	                          <label>Dato1</label>
+	                          <select name="format" id="format">
+		                           <option value="a">Dan</option>
+		                           <option value="b">Daniel</option>
+		                           <option value="c">Danielle</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+								<label>Etiqueta2</label>
+								<input type="number" placeholder="Coloca un numero" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Dato1</label>
+								<input type="text" placeholder="Coloca un dato" required>
+								
+							</div>
+
+							<div class="input-fields">
+								<label>Fecha</label>
+								<input type="date" placeholder="Fecha" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Etiqueta2</label>
+								<input type="number" placeholder="Coloca un numero" required>
+							</div>
+
+							<button>Guardar</button>
+</div>
+</form>
+</div>
+
+
+<script type="text/javascript" src="js/virtual-select.min.js"></script>
+<script type="text/javascript">
+	VirtualSelect.init({ 
+	  ele: '#multi_option' 
+	});
+</script>
+</body>
+</html>

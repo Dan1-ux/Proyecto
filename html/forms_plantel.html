@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Jesadi</title>
+<link rel="stylesheet" type="text/css" href="css/virtual-select.min.css">
+<link rel="stylesheet" type="text/css" href="css/forms_nuevo.css">
+
+<link rel="shortcut icon" href="img/icono1.png">
+</head>
+<body>
+
+<div class="container">
+	<header>Plantel</header>
+
+ <div class="tab_box">
+	<button class="tab_btn">Crear</button>
+    <button class="tab_btn">Documentos</button>
+	<button class="tab_btn">Parametros</button>
+	<div class="line"></div>
+</div>
+
+                    <div class="content_box">
+
+                       <div class="content">
+                           <div class="input-fields">
+                                <label>Clave Plantel</label>
+                                <input type="text" placeholder="Escribe la clave" required>
+                           </div>
+
+
+                          <div class="input-fields">
+
+	                          <label>Tipo de plantel</label>
+
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+                       
+	
+
+                           <div class="input-fields">
+                                <label>Denominación</label>
+                                <input type="text" placeholder="Escribe la denominación" required>
+                           </div>
+
+                            <div class="input-fields">
+                                <label>Razón social</label>
+                                <input type="text" placeholder="Escribe la razon social" required>
+                           </div>
+
+                            <div class="input-fields">
+                                <label>Razón social (Contabilidad)</label>
+                                <input type="text" placeholder="Escribe la razon social" required>
+                           </div>
+
+                            <div class="input-fields">
+                                <label>RFC</label>
+                                <input type="text" placeholder="Escribe el RFC" required>
+                           </div>
+
+                            <div class="input-fields">
+                                <label>Clave incorporación</label>
+                                <input type="text" placeholder="Escribe la clave" required>
+                           </div>
+
+                           <div class="input-fields">
+	                          <label>Matriz</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+	                          <label>Cuenta contable</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Clave multipagos</label>
+                                <input type="text" placeholder="Coloca un dato" required>
+                           </div>
+
+                            <div class="input-fields">
+	                          <label>Conceptos Multipagos</label>
+	                          <select id="multi_option" multiple name="native-select" placeholder="Elige una o varias opciones" data-silent-initial-value-set="false">
+	                              <option value="1">Opcion1</option>
+	                               <option value="2">Opcion2</option>
+	                               <option value="3">Opcion3</option>
+	                               <option value="4">Opcion4</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+	                          <label>Formas pago-multipagos</label>
+	                          <select id="multi_option" multiple name="native-select" placeholder="Elige una o varias opciones" data-silent-initial-value-set="false">
+	                              <option value="1">Opcion1</option>
+	                               <option value="2">Opcion2</option>
+	                               <option value="3">Opcion3</option>
+	                               <option value="4">Opcion4</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+								<label>Régimen fiscal</label>
+								<input type="text" placeholder="Escribe el regimen" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Calle</label>
+								<input type="text" placeholder="Escribe la calle" required>
+								
+							</div>
+
+							<div class="input-fields">
+								<label>Número Interno</label>
+								<input type="number" placeholder="No. interno" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Número Exterior</label>
+								<input type="number" placeholder="No. exterior" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Codigo Postal</label>
+								<input type="number" placeholder="C.P." required>
+							</div>
+
+							<div class="input-fields">
+								<label>Colonia</label>
+								<input type="text" placeholder="Escribe la colonia" required>
+							</div>
+
+							<div class="input-fields">
+	                          <label>Estado</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+
+							<div class="input-fields">
+								<label>Teléfono</label>
+								<input type="number" placeholder="Tel" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Correo electronico</label>
+								<input type="text" placeholder="Correo" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Página web</label>
+								<input type="text" placeholder="Escribe la pagina web" required>
+							</div>
+
+							<div class="input-fields">
+	                          <label>Periodo lectivo</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+	                          <label>Estatus</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+	                          <label>Director</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+	                          <label>Responsable</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+
+                            <div class="input-fields">
+								<label>Enlace Lugar</label>
+								<input type="text" placeholder="Escribe el enlace" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Enlace</label>
+								<input type="text" placeholder="Escribe el enlace" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Clave estatal</label>
+								<input type="text" placeholder="Escribe la clave" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Clave central trabajo</label>
+								<input type="text" placeholder="Escribe la clave" required>
+							</div>
+ 
+							<div class="input-fields">
+							    <button class="btn_guardar">Guardar</button>
+						    </div>
+		              </div>
+
+
+
+		               <div class="content">
+		         	       <div class="input-fields">
+	                          <label>Documentos</label>
+	                          <select class="selection">
+	                          	<option selected disabled>Elige una opcion</option>
+		                           <option value="a">Opcion1</option>
+		                           <option value="b">Opcion2</option>
+		                           <option value="c">Opcion3</option>
+	                          </select>
+                            </div>
+
+                           <div class="input-fields">
+								<label>Fecha de vigencia</label>
+								<input type="date" placeholder="Fecha de vigencia" required>
+							</div>
+
+							<div class="input-">-
+								<label>Adjuntar archivos</label>
+								<input multiple type="file" placeholder="Selecciona" required>
+							</div>
+
+
+
+							<div class="input-fields">
+							    <button class="btn_guardar">Guardar</button>
+						    </div>
+		              </div>
+
+
+
+		              <div class="content">
+		              	<div class="input-fields">
+								<label>Consecutivo empleado</label>
+								<input type="text" placeholder="Escribe el consecutivo" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Consecutivo alumno</label>
+								<input type="text" placeholder="Escribe el consecutivo" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Consecutivo ticket</label>
+								<input type="text" placeholder="Escribe el consecutivo" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Consecutivo pago</label>
+								<input type="text" placeholder="Escribe el consecutivo" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Clave vinculación</label>
+								<input type="text" placeholder="Escribe la clave" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Consecutivo vinculación</label>
+								<input type="text" placeholder="Escribe el consecutivo" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Meta Total Empleado</label>
+								<input type="text" placeholder="Escribe la meta" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Meta total</label>
+								<input type="text" placeholder="Escribe la meta total" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Cuenta facturacion</label>
+								<input type="text" placeholder="Escribe la cuenta" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Usuario facturacion</label>
+								<input type="text" placeholder="Escribe el usuario" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Contraseña facturacion</label>
+								<input type="text" placeholder="Escribe la contraseña" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Serie Factura</label>
+								<input type="text" placeholder="Escribe la serie" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Folio factura</label>
+								<input type="text" placeholder="Escribe el folio" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Id cuenta</label>
+								<input type="text" placeholder="Escribe el id" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Contraseña cuenta</label>
+								<input type="text" placeholder="Escribe la contraseña" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Id usuario (tel o email)</label>
+								<input type="text" placeholder="Escribe el id" required>
+							</div>
+
+							<div class="input-fields">
+								<label>Contraseña usuario (tel o email)</label>
+								<input type="text" placeholder="Escribe la serie" required>
+							</div>
+
+							/*campo de texto*/
+
+ 
+							<div class="input-fields">
+							    <button class="btn_guardar">Guardar</button>
+						    </div>
+		              	
+		              </div>
+
+ 
+</div>
+
+
+<!--<script type="text/javascript" src="js/virtual-select.min.js"></script>
+<script type="text/javascript">
+	VirtualSelect.init({ 
+	  ele: '#multi_option' 
+	});
+</script>
+
+<script>
+const tabs= document.querySelectorAll('.tab_btn');
+	const all_content= document.querySelectorAll('.content');
+
+	tabs.forEach((tab, index)=>{
+		tab.addEventListener('click',(e)=>{
+			tabs.forEach(tab=>{tab.classList.remove('active')});
+			tab.classList.add('active');
+
+			var line= document.querySelector('.line');
+		line.style.width = e.target.offsetWidth + "px";
+		line.style.left = e.target.offsetLeft + "px";
+
+		all_content.forEach(content=>{content.classList.remove('active')});
+		all_content[index].classList.add('active');
+
+		})
+	})
+
+</script>-->
+
+
+
+</body>
+</html>

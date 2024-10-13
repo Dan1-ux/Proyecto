@@ -1,0 +1,111 @@
+/* Globales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto=swap');
+*{
+    margin 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+/* Header */
+header{
+    display: flex;
+    padding: 30px 30px 40px 0;
+}
+
+body{
+
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #333;
+
+    /*background-image: linear-gradient(135deg, #F3F771, #D0EC69, #45E74D, #FEDF2A, #FEAC2A, #FE6D2A, #F9B14E);
+    background-size: 500%;
+    animation: fanimado 10s infinite;*/
+}
+
+/*@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+}*/
+
+#particle-js{
+    height: 1000vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+    padding: 30px 10px;
+    position: relative;
+    z-index: 99;
+}
+
+
+.item figure{
+    position: relative;
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+    box-shadow: 0 100 180px rgba(0, 0, 0, 0.50);
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.item figure:hover{
+    box-shadow: 0 100 180px rgba(0, 0, 0, 0.2);
+}
+
+.item figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    transition: all 500ms ease-out;
+    box-shadow: 0 100 180px rgba(0, 0, 0, 0.2);
+}
+
+
+.item figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    
+}
+
+.item figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.item figure:hover > .capa h2{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.item figure .capa h2{
+    color: #fff;
+    font-weight: 100;
+    transition: all 500ms ease-out;
+
+}
+

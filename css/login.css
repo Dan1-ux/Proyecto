@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Roboto', sans-serif;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url('../img/fondo2.jpg');
+	background-repeat: no repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.principal{
+	width: 420px;
+	background: transparent;
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+	color: #fff;
+	border-radius: 10px;
+	padding: 70px 60px;
+}
+
+
+.contenido h1{
+	font-size: 36px;
+	text-align: center;
+}
+
+.input-box{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 30px 0;
+}
+
+.input-box input{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid rgb(255, 255, 255, 0.2);
+	border-radius: 40px;
+	font-size: 15px;
+	color: #fff;
+	padding: 0 60px ;
+	transition: all 0.2s ease;
+}
+
+.input-box input::placeholder{
+	color: #fff;
+
+}
+
+.input-box img{
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%);
+	font-size: 20px;
+}
+
+.input-box img.usuario{
+
+	left: 20px;
+}
+
+.input-box img.pass{
+	left: 20px;
+}
+
+.input-box img.see{
+	right: 20px;
+}
+
+.principal .rec{
+	padding: 10px;
+	display: grid;
+	font-size: 14px;
+	margin: -15px 0 15px;
+}
+
+
+.rec label input{
+	accent-color: #fff;
+	margin-right: 3px;
+}
+
+.olv .btn1{
+	color: #fff;
+	text-decoration: none;
+}
+
+.olv a:hover{
+	text-decoration: underline;
+}
+
+
+.btn2{
+	display: block;
+	background: #fff;
+	border:none;
+	outline: none;
+	border-radius: 100px;
+	box-shadow: 0 0  10px rgb(0, 0, 0, 0.1);
+	cursor: pointer;
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+}
+
+
+
